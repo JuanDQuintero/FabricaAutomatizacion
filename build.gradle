@@ -12,6 +12,15 @@ buildscript {
 plugins {
     id 'java'
     id "idea"
+    id "org.sonarqube" version "4.1.0.3113"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "julian-castanoj_automatic"
+    property "sonar.organization", "julian-castanoj"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 
 group 'com.calidad'
